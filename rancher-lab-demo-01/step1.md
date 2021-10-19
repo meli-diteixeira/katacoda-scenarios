@@ -11,7 +11,7 @@ As of Rancher v2.5, privileged access is [required](https://rancher.com/docs/ran
 
 ## Run Rancher Continer
 
-`docker run -it --restart=unless-stopped \
+`docker run -dit --restart=unless-stopped \
   -p 80:80 -p 443:443 \
   --privileged \
   rancher/rancher:latest
