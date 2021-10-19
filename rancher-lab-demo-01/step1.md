@@ -9,9 +9,18 @@ Log into your Linux host, and then run the minimum installation command below.
 
 As of Rancher v2.5, privileged access is [required](https://rancher.com/docs/rancher/v2.5/en/installation/other-installation-methods/single-node-docker/#privileged-access-for-rancher-v2-5).
 
-```shell
-docker run -d --restart=unless-stopped \
+## Run Rancher Continer
+
+`docker run -d --restart=unless-stopped \
   -p 80:80 -p 443:443 \
   --privileged \
   rancher/rancher:latest
-```
+`{{execute}}.
+
+## Generated Web Link
+
+https://[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com
+
+## Markdown
+
+<pre>https://[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com</pre>
