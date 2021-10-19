@@ -11,16 +11,23 @@ As of Rancher v2.5, privileged access is [required](https://rancher.com/docs/ran
 
 ## Run Rancher Continer
 
-`docker run -d --restart=unless-stopped \
+`docker run -it --restart=unless-stopped \
   -p 80:80 -p 443:443 \
   --privileged \
   rancher/rancher:latest
 `{{execute}}.
 
+## Check if Rancher are up and running on container
+
+`docker ps`{{execute}}.
+
+Change var ${CONTAINER_ID} to your rancher container id
+
+`docker logs -f ${CONTAINER_ID}`{{execute}}.
+
 ## Generated Web Link
 
 https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
 
-## Markdown
-
-<pre>https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com</pre>
+Node: if the service is not yet accessible, validate the status of your container,
+Rancher needs to be running for this link to work.
