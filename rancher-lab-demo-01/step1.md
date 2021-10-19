@@ -19,8 +19,8 @@ As of Rancher v2.5, privileged access is [required](https://rancher.com/docs/ran
 
 ## Generated Web Link
 
-https://[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com
+https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
 
-## Markdown
+## Markdown
 
-<pre>https://[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com</pre>
+<pre>https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com</pre>
