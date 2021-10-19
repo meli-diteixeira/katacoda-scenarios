@@ -21,13 +21,13 @@ As of Rancher v2.5, privileged access is [required](https://rancher.com/docs/ran
 
 `docker ps`{{execute}}.
 
-Change var ${CONTAINER_ID} to your rancher container id
+Note: Change variable example `${CONTAINER_ID}` to your Rancher `container_id` in the next command line!
 
-`docker logs -f ${CONTAINER_ID}`{{execute}}.
+`docker logs -f ${container_id}`{{execute}}.
 
 ## Generated Web Link
 
 https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
 
-Node: if the service is not yet accessible, validate the status of your container,
+Note: if the service is not yet accessible, validate the status of your container,
 Rancher needs to be running for this link to work.
